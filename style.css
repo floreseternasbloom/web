@@ -1,0 +1,287 @@
+
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #2e013b;
+}
+
+/* Encabezado */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #A76C96;
+}
+
+header h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #A76C96;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #dc65e7;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #870299;
+}
+/* Estilo general de la sección de bienvenida */
+.bienvenida {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Texto a la izquierda */
+.bienvenida .texto {
+  flex: 1;
+  text-align: left;
+}
+
+.bienvenida .texto h1 {
+  color: #a16dc2; /* tono lila */
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+.bienvenida .texto p {
+  font-size: 1.1em;
+  color: #230429;
+  line-height: 1.6;
+}
+
+/* Imagen a la derecha */
+.bienvenida .imagen {
+  flex: 1;
+  text-align: right;
+}
+
+.bienvenida .imagen img {
+  width: 90%;          /* aumenta tamaño de imagen */
+  max-width: 450px;    /* limita el ancho máximo */
+  border-radius: 20px; /* bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 🌹 Secciones */
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+section h2 {
+  color: #b30fff;
+  font-size: 1.8rem;
+}
+
+/* 📸 Imágenes */
+img {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* 💐 Galería de productos */
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.producto {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto h3 {
+  color: #ff82d5;
+}
+
+/* 📝 Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, select, button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  background-color: #df62a0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffb6c1;
+}
+
+#btnArriba:hover {
+  background-color: #ffb6c1;
+}
+
+/* 📞 Pie de página */
+footer {
+  background-color: #ec89bb;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Animación de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botones estilo demo */
+button {
+  background-color: #ecaabf; /* color rosa vivo */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #d4688c;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Sección de contacto */
+  #contacto {
+    background: #fdf7ff;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 3px solid #a76c96;
+  }
+
+  #contacto h2 {
+    color: #a76c96;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+
+  #contacto p {
+    color: #4b2759;
+    font-size: 1.1em;
+    margin: 8px 0;
+  }
+
+  #contacto a {
+    color: #fd94de;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  #contacto a:hover {
+    color: #b30fff; /* toque dorado */
+  }
+
+  .redes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .redes a {
+    background: #b30fff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .redes a:hover {
+    background: #fd94de;
+    color: #4b2759;
+  }
+
+  .fa-instagram {
+    font-size: 1.2em;
+  }
+
+  /* Pie de página */
+  footer {
+    background: #a76c96;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    margin-top: 30px;
+  }
+
+

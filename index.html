@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Bloom∞ - Flores Eternas Tupiza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <body style="
+  background-image: url('f1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;">
+
+  <!-- Encabezado -->
+  <header>
+    <p>
+  <img src="images/logo3.png" alt="" 
+      style="float:left; width:px100; height: 100px;"><span style="vertical-align:bottom"></span>
+  </p>
+    <h1> Bloom∞ </h1>
+      <h4><p>Tienda de Flores Eternas</p></h4>
+    
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#registro">Registro</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Bienvenida -->
+<section id="bienvenida" class="bienvenida">
+  <div class="texto">
+    <h1>¡Bienvenidos a Bloom∞!</h1>
+    <p>
+      Descubre la belleza de nuestras flores eternas, elegancia, amor y durabilidad en cada pétalo. <br><br>
+      Donde cada flor es una obra de arte que nunca se marchita. <br><br>
+      Elaboradas a mano con amor, creatividad y dedicación. <br><br>
+      Desde Tupiza, Bolivia, un detalle que perdura en el tiempo.
+    </p>
+  </div>
+
+  <div class="imagen">
+    <img src="a1.png" alt="Flores eternas Bloom∞">
+  </div>
+</section>
+
+  <!-- Sección Productos -->
+  <section id="productos">
+    <h2>Nuestros Arreglos</h2>
+    <div class="galeria">
+      <div class="producto">
+        <img src="b5.png" alt="Arreglos de Limpiapipas">
+        <h3>Arreglos de Limpiapipas</h3>
+        <p>Flores divertidas y coloridas, hechas a mano con limpiapipas moldeables, ideal para adornos, regalos o detalles artesanales, cada flor es unica y personalizada.</p>
+      </div>
+      <div class="producto">
+        <img src="b6.png" alt="Arreglos Tejidos">
+        <h3>Arreglos Tejidos</h3>
+        <p>Flores tejidas hechas a mano con hilos suaves, cada flor tejida combina delicadeza y textura unica. Perfecta para adornos, accesorios o regalos, cada pieza es un detalle artesanal exclusivo.</p>
+      </div>
+      <div class="producto">
+        <img src="b4.png" alt="Arreglos de Listón">
+        <h3>Arreglos de Listón</h3>
+        <p>Flores de listón artesanal, elegante y resistente. Sus petalos finamente trabajados le dan un toque unico a cualquier accesorio decorativo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Registro -->
+   <section id="registro">
+    <h2>Registro de Contacto</h2>
+    <form id="formRegistro">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required />
+
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+   <script>
+    document.getElementById("formRegistro").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value;
+      const telefono = document.getElementById("telefono").value;
+
+      // Cambia este número por el tuyo (con código de país)
+      const numeroWhatsApp = "59164362190"; // Ejemplo Bolivia (+591)
+
+      const mensaje = `¡Hola! Soy ${nombre}. Me registro con el número ${telefono}. 🌸`;
+
+      // Enlace directo a WhatsApp
+      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+
+      // Redirigir al chat de WhatsApp
+      window.open(url, "_blank");
+    });
+  </script>
+
+  <!-- Sección Contacto -->
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <p>📍 <strong>Tupiza, Bolivia</strong></p>
+  <p>📞 <a href="tel:64362190">64362190</a></p>
+  <p>📱 Síguenos en redes sociales:</p>
+  <div class="redes">
+    <a href="https://www.instagram.com/bloom_tupiza?igsh=Mm5qZWxtbGFjZ3Bw" target="_blank">
+      <i class="fa-brands fa-instagram"></i> Instagram
+    </a>
+  </div>
+</section>
+
+<!-- Pie de página -->
+<footer>
+  <p>© 2025 <strong>Bloom∞</strong> — Todos los derechos reservados</p>
+</footer>
+
+<!-- Font Awesome para iconos -->
+<script src="https://kit.fontawesome.com/a2e0e6e9d1.js" crossorigin="anonymous"></script>
